@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Mileage Calculator";
+}
+<h3>@ViewData["Title"]</h3>
+
+<form action="../Home/MileageResult"method="post">
+    <label for="mgp">Mileage (MPG)></label>
+    <input id="mpg" type="number" name="mpg" step="0.01"  placeholder="mpg" />
+    <br />
+    <label for="gallons">Gallons Remaining></label>
+    <input id="gallons" type="number" name="gallons" step="0.1" placeholder="gal" min="0" max="35" />
+    <br />
+    Trip Distance <input id="trip" type="number" name="trip" placeholder="miles" min="0" />
+    <br />
+
+    <input type="submit" value="Calculate" />
+
+</form>

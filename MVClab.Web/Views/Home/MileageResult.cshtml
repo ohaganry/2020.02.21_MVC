@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Distance until Empty";
+}
+
+@model string
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Contains("more"))
+{
+    <h2 style="color: red;">@Model</h2>
+}
+else
+{
+    <h2 style="color: green;">@Model</h2>
+}
